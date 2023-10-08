@@ -6,6 +6,42 @@
     }
 }
 
+.page-header--closed .page-header__menu-list {
+    @media (max-width: $breakpoint-small-down) {
+        display: none;
+    }
+}
+
+.page-header--without-js .page-header__menu-list {
+    @media (max-width: $breakpoint-small-down) {
+        display: block;
+        position: relative;
+    }
+}
+
+.page-header--without-js .page-header__toggler {
+    @media (max-width: $breakpoint-small-down) {
+        display: none;
+    }
+}
+
+.page-header__toggler {
+    box-sizing: border-box;
+    border: none;
+    position: relative;
+    min-width: 60px;
+    min-height: 60px;
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media (min-width: $breakpoint-medium) {
+        display: none;
+    }
+}
+
 .page-header__menu-list {
     list-style: none;
     background-color: $color-base-white;

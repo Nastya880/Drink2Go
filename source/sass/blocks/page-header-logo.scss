@@ -1,3 +1,15 @@
+.page-header__bar {
+    padding: 12px 0 12px 0 20px;
+
+    @media (min-width: $breakpoint-large) {
+        padding: 22px 0 22px 0 20px;
+    }
+
+    @media (min-width: $breakpoint-small-down) {
+        display: flex;
+    }
+}
+
 .page-header__title {
     display: none;
     margin: 24px 0 0 20px;
@@ -8,7 +20,7 @@
 
     @media (min-width: $breakpoint-large) {
         display: block;
-        margin: 20px 0 0 20px;
+        margin: 24px 0 0 24px;
     }
 }
 
@@ -17,6 +29,6 @@
     align-items: center;
 
     @media (min-width: $breakpoint-medium) {
-        padding: 6px 0;
+        padding: 6px;
     }
 }

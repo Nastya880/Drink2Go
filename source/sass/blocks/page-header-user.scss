@@ -9,6 +9,7 @@
 
     @media (min-width: $breakpoint-medium) {
         margin: 0;
+        order: 2; ////dddddddddddddddddddd
     }
 }
 
@@ -40,6 +41,7 @@
         content: "";
         width:  16px;
         height: 16px;
+        background-color: currentColor;
     }
 
     @media (min-width: $breakpoint-medium) {
