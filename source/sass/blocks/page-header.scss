@@ -34,6 +34,23 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    @media (min-width: $breakpoint-medium) {
+        display: none;
+    }
+}
+
+.page-header--without-js .page-header__menu-list {
+    @media (max-width: $breakpoint-small-down) {
+        display: block;
+        position: relative;
+    }
+}
+
+.page-header--without-js .page-header__toggler {
+    @media (max-width: $breakpoint-small-down) {
+        display: none;
+    }
 }
 
 .page-header__bar {
@@ -48,25 +65,12 @@
     }
 }
 
-.page-header__logo-image  {
-    display: block;
-    align-items: center;
+.page-header__nav  {
+    display: flex;
+    justify-content: space-between;
 
     @media (min-width: $breakpoint-medium) {
-        padding: 6px 0;
+        display: contents;
     }
-}
+} 
 
-.page-header__title {
-    display: none;
-    margin: 5px 0 0 20px;
-    width: 130px;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 400;
-
-    @media (min-width: $breakpoint-large) {
-        display: block;
-        margin: 20px 0 0 20px;
-    }
-}

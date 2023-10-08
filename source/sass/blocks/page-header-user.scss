@@ -20,3 +20,38 @@
         margin-left: 8px;
     }
 }
+
+.page-header__user-link {
+    box-sizing: border-box;
+    min-width: 60px;
+    min-height: 60px;
+    padding: 22px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+        content: "";
+        width:  16px;
+        height: 16px;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+        min-height: 80px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $color-primary-lighter;
+    }
+
+    &:active {
+        background-color: $color-primary-darker;
+    }
+}
