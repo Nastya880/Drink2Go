@@ -1,0 +1,24 @@
+.slider {
+    position: relative;
+}
+
+.slider-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-pagination {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-pagination--item {
+    min-height: 714px;
+}
+
+.slider-pagination__item-wrapper {
+    display: grid;
+    box-sizing: border-box;
+}
