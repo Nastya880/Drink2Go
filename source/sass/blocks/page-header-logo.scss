@@ -12,7 +12,7 @@
 
 .page-header__title {
     display: none;
-    margin: 24px 0 0 20px;
+    margin: 22px 0 0 22px;
     width: 126px;
     font-size: 12px;
     line-height: 16px;
@@ -20,15 +20,16 @@
 
     @media (min-width: $breakpoint-large) {
         display: block;
-        margin: 24px 0 0 24px;
+        margin: 22px 0 0 22px;
     }
 }
 
 .page-header__logo-image {
     display: block;
     align-items: center;
+    margin: 8px 0 0 22px; //  подобрала ?
 
     @media (min-width: $breakpoint-medium) {
-        padding: 6px;
+        padding: 10px 0;
     }
 }

@@ -9,7 +9,7 @@
 
     @media (min-width: $breakpoint-medium) {
         margin: 0;
-        order: 2; ////dddddddddddddddddddd
+        order: 2;
     }
 }
 
@@ -36,13 +36,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    &::before {
-        content: "";
-        width:  16px;
-        height: 16px;
-        background-color: currentColor;
-    }
+    color: $color-base-black;
 
     @media (min-width: $breakpoint-medium) {
         min-height: 80px;
@@ -50,10 +44,14 @@
 
     &:hover,
     &:focus {
-        color: $color-primary-lighter;
+        color: $color-base-primary;
     }
 
     &:active {
-        background-color: $color-primary-darker;
+        background-color: $color-base-secondary;
+
+        @media (min-width: $breakpoint-medium) {
+            color: $color-base-primary;
+        }
     }
 }

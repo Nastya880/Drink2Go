@@ -40,6 +40,10 @@
     @media (min-width: $breakpoint-medium) {
         display: none;
     }
+
+    &:active {
+        background-color: $color-base-secondary;
+    }
 }
 
 .page-header__menu-list {
@@ -80,10 +84,19 @@
     line-height: 16px;
     letter-spacing: 0.24px;
     text-transform: uppercase;
+    // color: $color-base-black; /////////////////////////////////
 
-    &--active {
+    &:hover,
+    &:focus {
         color: $color-base-primary;
-        border-bottom: 2px solid $color-base-primary;
+    }
+
+    &:active {
+        background-color: $color-base-secondary;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+        color: $color-base-primary;
     }
 
     @media (min-width: $breakpoint-medium) {
@@ -96,3 +109,9 @@
     }
 }
 
+.page-header__menu-item-link--active {
+    @media (min-width: $breakpoint-medium) {
+            color: $color-base-primary;
+            border-bottom: 2px solid $color-base-primary;
+    }
+}
