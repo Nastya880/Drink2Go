@@ -1,0 +1,72 @@
+.page-header {
+    position: relative;
+    
+    @media (min-width: $breakpoint-medium) {
+      min-height: 80px;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  
+    @media (min-width: $breakpoint-large) {
+      max-width: 1360px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+}
+
+.page-header--closed .page-header__menu-list {
+    @media (min-width: $breakpoint-small-down) {
+        display: none;
+    }
+}
+
+.page-header__toggler {
+    box-sizing: border-box;
+    border: none;
+    position: relative;
+    min-width: 60px;
+    min-height: 60px;
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-header__bar {
+    padding: 12px 0 12px 0 20px;
+
+    @media (min-width: $breakpoint-large) {
+        padding: 22px 0 22px 0 20px;
+    }
+
+    @media (min-width: $breakpoint-small-down) {
+        display: flex;
+    }
+}
+
+.page-header__logo-image  {
+    display: block;
+    align-items: center;
+
+    @media (min-width: $breakpoint-medium) {
+        padding: 6px 0;
+    }
+}
+
+.page-header__title {
+    display: none;
+    margin: 5px 0 0 20px;
+    width: 130px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+
+    @media (min-width: $breakpoint-large) {
+        display: block;
+        margin: 20px 0 0 20px;
+    }
+}
