@@ -202,89 +202,102 @@
             <h2 class="catalog__title">Каталог</h2>
             <h3 class="catalog__heading">Каталог кофейных напитков</h3>
 
-            <div class="catalog-filter">
-                <h2 class="visually-hidden">Фильтр для посика товаров</h2>
-                <form class="catalog-filter__form" method="post" action="https://echo.htmlacademy.ru">
-                    <fieldset class="catalog-filter__price">
-                        <legend class="catalog-filter__title">Цена</legend>
-                        <div class="catalog-filter__price-range"></div>
+            <div class="catalog-wrapper">
+                <div class="catalog-filter">
+                    <h2 class="visually-hidden">Фильтр для посика товаров</h2>
+                    <form class="catalog-filter__form" method="post" action="https://echo.htmlacademy.ru">
+                        <fieldset class="catalog-filter__price">
+                            <legend class="catalog-filter__title">Цена</legend>
+                            <div class="catalog-filter__price-range">
 
-                        <!-- <div class="catalog-filter-container">
-							<div class="catalog-filter-price">
-								<div class="catalog-filter-price-range" style="left: 50px; right: 50px;">
-									<button class="range-toggle toggle-min" type="button">
-										<span class="visually-hidden">Изменить минимальную цену</span>
-									</button>
-									<button class="range-toggle toggle-max" type="button">
-										<span class="visually-hidden">Изменить максимальную цену</span>
-									</button>
-								</div>
-							</div>
+                                <div class="catalog-filter__range-container">
+                                    <div class="catalog-filter__range-scale">
+                                        <div class="catalog-filter__range-bar"></div>
+                                    </div>
+                                
+                                    <div class="catalog-filter__range-togglers">
+                                        <div class="catalog-filter__range-toggler catalog-filter__range-toggler--min"></div>
+                                        <div class="catalog-filter__range-toggler catalog-filter__range-toggler--max"></div>
+                                    </div>
+                                </div>
+                            
+                            </div>
 
-							<div class="price-label-container">
-								<label class="catalog-filter-label">
-									от <input class="catalog-filter-input" type="number" name="minimum-price" value="50">₽
-								</label>
-								<label class="catalog-filter-label">
-									до <input class="catalog-filter-input" type="number" name="maximum-price" value="1500">₽
-								</label>
-							</div>
-						</div> -->
-                    </fieldset>
+                            <div class="catalog-filter__price-controls">
+                                <label class="catalog-filter__price-label">
+                                    <input class="catalog-filter__price-input catalog-filter__price-input--min" type="text" min="0" max="900" placeholder="0" type="number" value="0">
+                                </label>
 
-                    <fieldset class="catalog-filter__milk">
-                        <legend class="catalog-filter__title catalog-filter__title--milk">Наличие молока</legend>
-                        <ul class="catalog-filter__list catalog-filter__milk">
-                            <li class="catalog-filter__item">
-                                <input class="catalog-filter__milk-input visually-hidden" id="not-matter-milk" type="radio" value="not-matter-milk">
-                                <label class="catalog-filter__milk-label" for="not-matter-milk">Неважно</label>
-                            </li>
-                            <li class="catalog-filter__item">
-                                <input class="catalog-filter__milk-input visually-hidden" id="" type="radio">
-                                <label class="catalog-filter__milk-label" for="">Только животное</label>
-                            </li>
-                            <li class="catalog-filter__item">
-                                <input class="catalog-filter__milk-input visually-hidden" id="vegetable-milk" type="radio" value="vegetable">
-                                <label class="catalog-filter__milk-label" for="vegetable-milk">Только растительное</label>
-                            </li>
-                            <li class="catalog-filter__item">
-                                <input class="catalog-filter__milk-input visually-hidden" id="without-milk" type="radio" value="without-milk">
-                                <label class="catalog-filter__milk-label" for="without-milk">Без молока</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-
-                    <fieldset class="catalog-filter__country">
-                        <legend class="catalog-filter__title catalog-filter__title--country">Страна произрастания</legend>
-                        <ul class="catalog-filter__list catalog-filter__country">
-                            <li class="catalog-filter__item">
-                                <input class="catalog-filter__country-input visually-hidden" id="brazil" type="checkbox" value="brazil">
-                                <label class="catalog-filter__country-label" for="brazil">Бразилия</label>
-                            </li>
-                            <li class="catalog-filter__item">
-                                <input class="catalog-filter__country-input visually-hidden" id="ethiopia" type="checkbox" value="ethiopia">
-                                <label class="catalog-filter__country-label" for="ethiopia">Эфиопия</label>
-                            </li>
-                            <li class="catalog-filter__item">
-                                <input class="catalog-filter__country-input visually-hidden" id="colombia" type="checkbox" value="colombia">
-                                <label class="catalog-filter__country-label" for="colombia">Колумбия</label>
-                            </li>
-                            <li class="catalog-filter__item">
-                                <input class="catalog-filter__country-input visually-hidden" id="costa-rica" type="checkbox" value="costa-rica">
-                                <label class="catalog-filter__country-label" for="costa-rica">Коста-Рика</label>
-                            </li>
-                            <li class="catalog-filter__item">
-                                <input class="catalog-filter__country-input visually-hidden" id="peru" type="checkbox" value="peru">
-                                <label class="catalog-filter__country-label" for="peru">Перу</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-
-                    <div class="catalog-filter__button-wrapper">
-                        <button class="catalog-filter__button" type="submit">Применить</button>
-                        <button class="catalog-filter__button catalog-filter__button--white" type="reset">Сбросить</button>
-                    </div>
-                </form>
+                                <label class="catalog-filter__price-label">
+                                    <input class="catalog-filter__price-input catalog-filter__price-input--max" type="text" min="0" max="900" placeholder="900" type="number" value="900">
+                                </label>
+                            </div>
+                        </fieldset>
+    
+                        <fieldset class="catalog-filter__milk">
+                            <legend class="catalog-filter__title catalog-filter__title--milk">Наличие молока</legend>
+                            <ul class="catalog-filter__list catalog-filter__milk">
+                                <li class="catalog-filter__item"> 
+                                    <!-- for="not-matter-milk" -->
+                                    <label class="catalog-filter__milk-label">
+                                        <input class="catalog-filter__milk-input" name="milk" type="radio" value="not-matter-milk">Неважно
+                                    </label>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <label class="catalog-filter__milk-label">
+                                        <input class="catalog-filter__milk-input" name="milk" type="radio" value="animal-milk">Только животное
+                                    </label>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <label class="catalog-filter__milk-label">
+                                        <input class="catalog-filter__milk-input" id="vegetable-milk" type="radio" value="vegetable" name="milk">Только растительное
+                                    </label>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <label class="catalog-filter__milk-label">
+                                        <input class="catalog-filter__milk-input" type="radio" value="without-milk" name="milk" disabled>Без молока
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+    
+                        <fieldset class="catalog-filter__country">
+                            <legend class="catalog-filter__title catalog-filter__title--country">Страна произрастания</legend>
+                            <ul class="catalog-filter__list catalog-filter__country">
+                                <li class="catalog-filter__item  catalog-filter__item-country">
+                                    <label class="catalog-filter__country-label">Бразилия
+                                        <input class="catalog-filter__country-input visually-hidden" type="checkbox" value="brazil" name="country">
+                                    </label>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <label class="catalog-filter__country-label">Эфиопия
+                                        <input class="catalog-filter__country-input visually-hidden" type="checkbox" value="ethiopia" name="country">
+                                    </label>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <label class="catalog-filter__country-label">Колумбия
+                                        <input class="catalog-filter__country-input visually-hidden" type="checkbox" value="colombia" name="country">
+                                    </label>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <label class="catalog-filter__country-label">Коста-Рика
+                                        <input class="catalog-filter__country-input visually-hidden" type="checkbox" value="costa-rica" name="country">
+                                    </label>
+                                </li>
+                                <li class="catalog-filter__item">
+                                    <label class="catalog-filter__country-label">Перу
+                                        <input class="catalog-filter__country-input visually-hidden" type="checkbox" value="peru" name="country">
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+    
+                        <div class="catalog-filter__button-wrapper">
+                            <button class="catalog-filter__button" type="submit">Применить</button>
+                            <button class="catalog-filter__button catalog-filter__button--reset" type="reset">Сбросить</button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
             <div class="catalog-sorting">

@@ -1,0 +1,21 @@
+.catalog-filter__price-range {
+    position: relative;
+    width: 318px;
+    height: 24px;
+}
+
+.catalog-filter__range-container {
+    position: relative;
+    border-radius: 4px;
+    padding: 8px 10px;
+}
+
+.catalog-filter__range-scale {
+    height: 2px;
+    background-color: $color-light-grey;
+}
+
+.catalog-filter__range-bar {
+    position: absolute;
+    top: 30px;
+}
