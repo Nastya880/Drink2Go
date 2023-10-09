@@ -1,0 +1,33 @@
+// .catalog-sorting {}
+
+.catalog-sorting__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: right;
+}
+
+.catalog-sorting-type {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    position: relative;
+}
+
+.catalog-sorting__select {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: $color-base-primary;
+    border: none;
+
+    &:hover,
+    &:focus  {
+        background-color: $color-base-secondary;
+    }
+}
+
+.catalog-sorting__select-option {
+    text-align: center;
+}
