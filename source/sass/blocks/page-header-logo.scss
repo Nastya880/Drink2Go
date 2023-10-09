@@ -1,8 +1,8 @@
 .page-header__bar {
-    padding: 12px 0 12px 0 20px;
+    padding: 12px 0 12px 20px;
 
     @media (min-width: $breakpoint-large) {
-        padding: 22px 0 22px 0 20px;
+        padding: 6px 0;
     }
 
     @media (min-width: $breakpoint-small-down) {
@@ -12,7 +12,7 @@
 
 .page-header__title {
     display: none;
-    margin: 22px 0 0 22px;
+    // margin: 24px 0 24px 20px; //// 5 0 0 20
     width: 126px;
     font-size: 12px;
     line-height: 16px;
@@ -20,16 +20,16 @@
 
     @media (min-width: $breakpoint-large) {
         display: block;
-        margin: 22px 0 0 22px;
+        margin: 24px 0 0 20px;
     }
 }
 
 .page-header__logo-image {
     display: block;
     align-items: center;
-    margin: 8px 0 0 22px; //  подобрала ?
 
-    @media (min-width: $breakpoint-medium) {
-        padding: 10px 0;
-    }
+    // @media (min-width: $breakpoint-medium) {
+    //     padding: 10px 0;
+    //     // display: none;
+    // }
 }

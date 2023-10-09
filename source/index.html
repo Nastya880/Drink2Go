@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drink2Go — интернет-магазин по продаже кофейных напитков</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="icon" href="favicon.ico"> -->
-    <!-- <link rel="icon" href="images/favicon/32.svg" type="image/svg+xml"> -->
-    <!-- <link rel="apple-touch-icon" href="images/favicon/favicon_package_v0/apple-touch-icon.png">
-    <link rel="manifest" href="images/favicon/favicon_package_v0/site.webmanifest"> -->
-    <!-- <link rel="preload" href="fonts/Montserrat-Italic-VariableFont_wght.ttf" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Montserrat-VariableFont_wght.ttf" as="font" crossorigin="anonymous"> -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body class="page__body">
     <header class="page__header page-header page-header--closed page-header--without-js">
@@ -415,9 +421,9 @@
                     </li>
                 </ul>
 
-                <ul class="catalog__pagination">
+                <ul class="catalog-pagination">
                     <li class="catalog-pagination__item">
-                        <a class="catalog-pagination__item-link" href="#">
+                        <a class="catalog-pagination__item-link catalog-pagination__item-link--prev" href="#">
                             <span class="catalog-pagination__item-prev-page">Предыдущая страница</span>
                         </a>
                     </li>
@@ -435,8 +441,8 @@
                     </li>
 
                     <li class="catalog-pagination__item">
-                        <a class="catalog-pagination__item-link" href="#">
-                            <span class="catalog-pagination__item-prev-page">Следующая страница</span>
+                        <a class="catalog-pagination__item-link catalog-pagination__item-link--next" href="#">
+                            <span class="catalog-pagination__item-next-page">Следующая страница</span>
                         </a>
                     </li>
                 </ul>
@@ -447,12 +453,13 @@
     <footer class="page__footer">
         <section class="map-container">
             <h2 class="visually-hidden">Локация кофейни на карте</h2>
+            <div class="map"></div>
         </section>
 
         <section class="page-footer__header">
 
             <div class="page-footer__header-logo">
-                <a class="page-footer-header-logo-link" href="#">
+                <a class="page-footer__header-logo-link" href="#">
                     <picture>
                         <source media="(min-width: 768px)" srcset="images/logo-large.svg">
                         <img class="page-footer__header-logo-image" src="images/logo-medium.svg" alt="Drink2Go">
