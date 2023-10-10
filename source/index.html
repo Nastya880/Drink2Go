@@ -78,17 +78,19 @@
     <main class="page__main page-main">
         <section class="slider">
             <h2 class="visually-hidden">Новинки</h2>
-            <div class="slider-wrapper">
-                <div class="button-container">
-                    <button class="slider-button slider-button--prev">
+            <div class="slider-wrapper swiper">
+                <!-- <div class="button-container"> -->
+                    <button class="slider-button slider-button--prev swiper-button-prev">
                         <span class="visually-hidden">Предыдущий слайд</span>
                     </button>
-                    <button class="slider-button slider-button--next">
+                    <button class="slider-button slider-button--next swiper-button-next">
                         <span class="visually-hidden">Следующий слайд</span>
                     </button>
-                </div>
-                <ol class="slider-pagination">
-                    <li class="slider-pagination__item">
+
+                    <div class="slider__bullets swiper-pagination"></div>
+                <!-- </div> -->
+                <ol class="slider-pagination swiper-wrapper">
+                    <li class="slider-pagination__item slider-pagination__item--decaf swiper-slide">
                         <div class="slider-pagination__item-wrapper">
                             <picture class="slider-pagination__item-picture">
                                 <source media="(min-width: 1440px)" srcset="images/slider-1-large.png" width="600" height="600">
@@ -110,7 +112,7 @@
                         </div>
                     </li>
 
-                    <li class="slider-pagination__item">
+                    <li class="slider-pagination__item  slider-pagination__item--lavanda swiper-slide">
                         <div class="slider-pagination__item-wrapper">
                             <picture class="slider-pagination__item-picture">
                                 <source media="(min-width: 1440px)" srcset="images/slider-2-large.png" width="600" height="600">
@@ -132,7 +134,7 @@
                         </div>
                     </li>
 
-                    <li class="slider-pagination__item">
+                    <li class="slider-pagination__item slider-pagination__item--espresso swiper-slide">
                         <div class="slider-pagination__item-wrapper">
                             <picture class="slider-pagination__item-picture">
                                 <source media="(min-width: 1440px)" srcset="images/slider-3-large.png" width="600" height="600">
@@ -546,5 +548,6 @@
     </footer>
 
     <script src="js/script.js" defet></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js" defer></script>
 </body>
 </html>
