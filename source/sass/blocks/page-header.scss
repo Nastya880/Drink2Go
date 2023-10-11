@@ -1,27 +1,31 @@
-.page-header {
-    position: relative;
-    
-    @media (min-width: $breakpoint-medium) {
-      min-height: 80px;
-      margin: 0 auto;
-      padding: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: stretch;
-    }
-  
-    @media (min-width: $breakpoint-large) {
-      max-width: 1360px;
-      margin-right: auto;
-      margin-left: auto;
-    }
+.page__header {
+  margin: 0;
 }
+.page-header {
+  @media (min-width: $breakpoint-medium) {
+    min-height: 80px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  @media (min-width: $breakpoint-large) {
+    min-height: 80px;
+    max-width: 1360px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-.page-header__nav {
+  &__nav {
     display: flex;
     justify-content: space-between;
 
     @media (min-width: $breakpoint-medium) {
         display: contents;
     }
+  }
 }

@@ -1,5 +1,13 @@
-.catalog-filter__milk-label {
-    position: relative;
+.catalog-filter__milk {
+    border: none;
+
+    &-label {
+        position: relative;
+    }
+
+    // &--input {}
 }
 
-// .catalog-filter__milk-input {}
+.catalog-filter__title--milk {
+    margin-bottom: 20px;
+}

@@ -8,26 +8,29 @@
         justify-content: flex-start;
         flex-wrap: wrap;
     }
-}
 
-.page-footer__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media (min-width: $breakpoint-large) {
-        justify-content: flex-start;
-        flex-direction: column;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        @media (min-width: $breakpoint-large) {
+            justify-content: flex-start;
+            flex-direction: column;
+        }
     }
-}
 
-.page-header__title {
-    display: none;
-}
-
-.page-footer__nav {
-    @media (min-width: $breakpoint-medium) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    &__nav {
+        @media (min-width: $breakpoint-medium) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
+    
 }
+
+
+// .page-header__title {
+//     display: none;
+// }
+
