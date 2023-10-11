@@ -1,98 +1,129 @@
-.card {
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: $color-base-white;
-}
-
 .catalog__product-card-list {
+    margin: 0 20px 20px;
     display: grid;
-    list-style: none;
     gap: 20px;
+    padding: 0;
+    list-style: none;
 
     @media (min-width: $breakpoint-medium) {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 30px 30зч;
+        margin-bottom: 55px;
     }
 
     @media (min-width: $breakpoint-large) {
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
+        padding: 0;
+        margin: -20px 26px 70px -26px;
     }
 }
 
-.product-card__item-image {
-    // margin: 0 auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+.product-card {      
+    &__item {
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: $color-base-white;
 
-.product-card__item-picture {
-    display: block;
-}
+        padding: 40px 20px 20px 18px;
 
-.product-card__title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 32px;
+        @media (min-width: $breakpoint-medium) {
+            padding: 50px 30px 30px 28px;
+        }
 
-    @media (min-width: $breakpoint-medium) {
-        font-size: 24px;
-        line-height: 36px;
-    }
-}
+        @media (min-width: $breakpoint-large) {
+            padding: 50px 30px 30px 28px;
+        }
 
-.product-card__title-link {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 32px;
-    color: $color-base-black;
-}
+        &-image {
+            margin: 0 auto;
+            display: block;
+            max-width: 100%; /////////
+            height: auto;
+        }
 
-.product-card__description  {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.product-card__price-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 165px;
-    gap: 50px;
-    align-items: center;
-
-    @media (min-width: $breakpoint-medium) {
-        gap: 99px;
+        &-picture {
+            display: block;
+            margin-bottom: 24px; ////////////
+        }
     }
 
-    @media (min-width: $breakpoint-large) {
-        gap: 67px;
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 32px;
+    
+        margin: 0 0 4px;
+    
+        @media (min-width: $breakpoint-medium) {
+            margin: 30px auto 10px 0;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        &-link {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 32px;
+            color: $color-base-black;
+        }
     }
-}
 
-.product-card__price {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 32px;
+    &__description  {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    
+        @media (min-width: $breakpoint-medium) {
+            margin: 0 0 20px 4px;
+        }
+    }
 
-    margin: 0;
-}
+    &__price {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 32px;
 
-.product-card__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    border-radius: 4px;
+        margin: 0;
+        
+        &-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 141px;
+            gap: 50px;
+            align-items: center;
+        
+            @media (min-width: $breakpoint-medium) {
+                gap: 99px;
+            }
+        
+            @media (min-width: $breakpoint-large) {
+                gap: 67px;
+            }
+        }
+    }
 
-    &::before {
-        content: "";
-        background: url(../../images/icons/bag-plus.svg) no-repeat center;
-        width: 20px;
-        height: 16px;
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        border-radius: 4px;
+        outline: 0; ////
+        color: $color-base-white;
+        background-color: $color-base-primary;
+        padding: 8px 20px;
+        box-sizing: border-box;
+        margin-right: 6px;
+    
+        &::before {
+            content: "";
+            background: url("../../images/icons/bag-plus.svg") no-repeat center/100%;
+            width: 20px;
+            height: 16px;
+            margin-right: 6px;
+        }
     }
 }

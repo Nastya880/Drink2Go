@@ -1,5 +1,15 @@
 .catalog {
     background-color: $color-lightest-grey;
+    padding-top: 50px;
+    width: 100%;
+
+    @media (min-width: $breakpoint-medium) {
+        padding-top: 80px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        padding-top: 100px;
+    }
 
     &__title {
         color: $color-base-primary;
