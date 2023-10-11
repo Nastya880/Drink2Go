@@ -6,16 +6,13 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    
+
     @media (min-width: $breakpoint-medium) {
         order: 2;
     }
-
     // &-link-icon {}
-    
     &-title {
         display: none;
-    
         @media (min-width: $breakpoint-large) {
             display: block;
             margin-left: 8px;
@@ -28,8 +25,8 @@
         min-width: 60px;
         min-height: 60px;
         padding: 22px;
-        
-        
+
+
         display: flex;
         justify-content: center;
         align-items: center;

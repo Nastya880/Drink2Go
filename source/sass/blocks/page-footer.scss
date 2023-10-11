@@ -13,7 +13,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
+
         @media (min-width: $breakpoint-large) {
             justify-content: flex-start;
             flex-direction: column;
@@ -26,7 +26,6 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
     }
-    
 }
 
 // .page-header__title {

@@ -18,112 +18,112 @@
     }
 }
 
-.product-card {      
-    &-item {
-        border-radius: 4px;
-        box-sizing: border-box;
-        background-color: $color-base-white;
+.product-card {
+  &-item {
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: $color-base-white;
 
-        padding: 40px 20px 20px 18px;
+    padding: 40px 20px 20px 18px;
 
-        @media (min-width: $breakpoint-medium) {
-            padding: 50px 30px 30px 28px;
-        }
-
-        @media (min-width: $breakpoint-large) {
-            padding: 50px 30px 30px 28px;
-        }
-
-        &-image {
-            margin: 0 auto;
-            display: block;
-            max-width: 100%; /////////
-            height: auto;
-        }
-
-        &-picture {
-            display: block;
-            margin-bottom: 24px; ////////////
-        }
+    @media (min-width: $breakpoint-medium) {
+      padding: 50px 30px 30px 28px;
     }
 
-    &-title {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 32px;
-    
-        margin: 0 0 4px;
-    
-        @media (min-width: $breakpoint-medium) {
-            margin: 30px auto 10px 0;
-            font-size: 24px;
-            line-height: 36px;
-        }
-
-        &-link {
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 32px;
-            color: $color-base-black;
-        }
+    @media (min-width: $breakpoint-large) {
+      padding: 50px 30px 30px 28px;
     }
 
-    &-description  {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-    
-        @media (min-width: $breakpoint-medium) {
-            margin: 0 0 20px 4px;
-        }
+    &-image {
+      margin: 0 auto;
+      display: block;
+      max-width: 100%; /////////
+      height: auto;
     }
 
-    &-price {
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 32px;
+    &-picture {
+      display: block;
+      margin-bottom: 24px; ////////////
+    }
+  }
 
-        margin: 0;
-        
-        &-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 141px;
-            gap: 50px;
-            align-items: center;
-        
-            @media (min-width: $breakpoint-medium) {
-                gap: 99px;
-            }
-        
-            @media (min-width: $breakpoint-large) {
-                gap: 67px;
-            }
-        }
+  &-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+
+    margin: 0 0 4px;
+
+    @media (min-width: $breakpoint-medium) {
+      margin: 30px auto 10px 0;
+      font-size: 24px;
+      line-height: 36px;
     }
 
-    &-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        text-align: center;
-        border-radius: 4px;
-        outline: 0; ////
-        color: $color-base-white;
-        background-color: $color-base-primary;
-        padding: 8px 20px;
-        box-sizing: border-box;
-        margin-right: 6px;
-    
-        &::before {
-            content: "";
-            background: url("../../images/icons/bag-plus.svg") no-repeat center/100%;
-            width: 20px;
-            height: 16px;
-            margin-right: 6px;
-        }
+    &-link {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 32px;
+      color: $color-base-black;
     }
+  }
+
+  &-description  {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+    @media (min-width: $breakpoint-medium) {
+      margin: 0 0 20px 4px;
+    }
+  }
+
+  &-price {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+
+    margin: 0;
+
+    &-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 141px;
+      gap: 50px;
+      align-items: center;
+
+      @media (min-width: $breakpoint-medium) {
+        gap: 99px;
+      }
+
+      @media (min-width: $breakpoint-large) {
+        gap: 67px;
+      }
+    }
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 4px;
+    outline: 0; ////
+    color: $color-base-white;
+    background-color: $color-base-primary;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    margin-right: 6px;
+
+    &::before {
+      content: "";
+      background: url("../../images/icons/bag-plus.svg") no-repeat center/100%;
+      width: 20px;
+      height: 16px;
+      margin-right: 6px;
+    }
+  }
 }
