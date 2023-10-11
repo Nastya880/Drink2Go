@@ -90,7 +90,7 @@
     }
 
     &-description {
-        &__title {
+        &-title {
             font-size: 18px;
             font-weight: 700;
             line-height: 32px;
@@ -108,7 +108,7 @@
             }
         }
 
-        &__info {
+        &-info {
             margin: 0;
             text-align: center;
             /* Regular Text Mobile */
