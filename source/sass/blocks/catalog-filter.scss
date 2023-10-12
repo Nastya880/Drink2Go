@@ -1,41 +1,41 @@
 .catalog-filter {
-    &__title {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
-        margin: 0;
-        padding: 0;
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__form {
+    @media (min-width: $breakpoint-medium) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
     }
 
-    &__form {
-        @media (min-width: $breakpoint-medium) {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        @media (min-width: $breakpoint-large) {
-            display: flex;
-            flex-direction: column;
-        }
+    @media (min-width: $breakpoint-large) {
+      display: flex;
+      flex-direction: column;
     }
+  }
 
-    &__list {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-    &__item {
-        margin: 0;
-    }
+  &__item {
+    margin: 0;
+  }
 }
 
 .catalog-filter__button-wrapper {
-    @media (min-width: $breakpoint-medium) {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 20px;
-        justify-content: center;
-    }
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    justify-content: center;
+  }
 }

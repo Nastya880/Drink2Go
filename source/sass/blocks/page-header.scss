@@ -1,7 +1,4 @@
 .page-header {
-  margin: 0;
-}
-.page-header {
   @media (min-width: $breakpoint-medium) {
     min-height: 80px;
     margin: 0;
@@ -25,7 +22,7 @@
     justify-content: space-between;
 
     @media (min-width: $breakpoint-medium) {
-        display: contents;
+      display: contents;
     }
   }
 }

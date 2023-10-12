@@ -1,38 +1,39 @@
 .catalog-sorting {
-    &__title {
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
-        text-align: right;
-        margin-right: 8px;
-        margin-bottom: 20px;
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: right;
+    margin-right: 8px;
+    margin-bottom: 20px;
 
-        @media (min-width: $breakpoint-medium) {
-            margin-right: 10px;
-            margin-bottom: 30px;
-        }
+    @media (min-width: $breakpoint-medium) {
+      margin-right: 10px;
+      margin-bottom: 30px;
     }
+  }
 
-    &-type {
-        display: flex;
-        justify-content: end;
-        align-items: flex-start;
+  &-type {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+  }
+
+  &__select {
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: $color-base-primary;
+    border: none;
+
+    &:hover,
+    &:focus {
+      background-color: $color-base-secondary;
     }
+  }
 
-    &__select {
-        text-align: right;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
-        color: $color-base-primary;
-        border: none;
-        &:hover,
-        &:focus  {
-            background-color: $color-base-secondary;
-        }
-
-        &-option {
-            text-align: center;
-        }
-    }
+  &__select-option {
+    text-align: center;
+  }
 }

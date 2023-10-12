@@ -60,20 +60,13 @@
     &:active {
       background-color: $color-base-secondary;
     }
-
-    &--active {
-      @media (max-width: $breakpoint-small-down) {
-        color: $color-base-black;
-      }
-
-      @media (min-width: $breakpoint-medium) {
-        color: $color-base-primary;
-        border-bottom: 2px solid $color-base-primary;
-      }
-    }
   }
 
   &-item-link--active {
+    @media (max-width: $breakpoint-small-down) {
+      color: $color-base-black;
+    }
+
     @media (min-width: $breakpoint-medium) {
       color: $color-base-primary;
       border-bottom: 2px solid $color-base-primary;
