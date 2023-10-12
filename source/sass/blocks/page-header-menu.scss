@@ -1,0 +1,109 @@
+
+.page-header__menu {
+  margin: 0;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 67px;
+    margin-left: 60px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-left: 162px;
+    margin-right: 162px;
+  }
+
+  &-list {
+    list-style: none;
+    background-color: $color-base-white;
+    padding: 0;
+
+    @media (min-width: $breakpoint-medium) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border: 0;
+      padding: 0;
+      margin: 4px 0 0 auto;
+    }
+  }
+
+  &-item {
+    @media (max-width: $breakpoint-small-down) {
+      border-bottom: 1px solid $color-base-secondary;
+    }
+  }
+
+  &-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    min-height: 63px;
+    padding: 20px auto 20px auto;
+    color: $color-base-black;
+
+    @media (min-width: $breakpoint-medium) {
+      padding: 32px 20px 30px 20px;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-base-primary;
+    }
+
+    &:active {
+      background-color: $color-base-secondary;
+    }
+  }
+
+  &-item-link--active {
+    @media (max-width: $breakpoint-small-down) {
+      color: $color-base-black;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+      color: $color-base-primary;
+      border-bottom: 2px solid $color-base-primary;
+    }
+  }
+}
+
+.page-header--closed .page-header__menu-list {
+  @media (max-width: $breakpoint-small-down) {
+    display: none;
+  }
+}
+
+.page-header--without-js .page-header__menu-list {
+  @media (max-width: $breakpoint-small-down) {
+    display: block;
+    position: relative;
+  }
+}
+
+.page-header--without-js .page-header__toggler {
+  @media (max-width: $breakpoint-small-down) {
+    display: none;
+  }
+}
+
+.page-header__toggler {
+  // box-sizing: border-box;
+  // border: none;
+  // position: relative;
+  // min-width: 60px;
+  // min-height: 60px;
+
+  @media (min-width: $breakpoint-medium) {
+    display: none;
+  }
+}
+
+// .page-header--opened .page-header__toggler {
+// }

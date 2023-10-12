@@ -1,0 +1,18 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Arial", serif;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}

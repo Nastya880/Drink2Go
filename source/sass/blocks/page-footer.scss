@@ -1,0 +1,33 @@
+.page-footer {
+  max-width: 1360px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $breakpoint-large) {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $breakpoint-large) {
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &__nav {
+    @media (min-width: $breakpoint-medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+// .page-header__title {
+//     display: none;
+// }

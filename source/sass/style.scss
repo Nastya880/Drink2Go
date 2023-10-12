@@ -1,0 +1,23 @@
+/* GLOBAL */
+@import "global/variables";
+@import "global/global";
+@import "global/fonts";
+
+/* BLOCKS */
+@import "blocks/visually-hidden";
+@import "blocks/page-header";
+@import "blocks/page-header-user";
+@import "blocks/page-header-menu";
+@import "blocks/page-header-logo";
+@import "blocks/slider";
+@import "blocks/advantages";
+@import "blocks/catalog";
+@import "blocks/catalog-filter";
+@import "blocks/catalog-filter-country";
+@import "blocks/catalog-filter-milk";
+@import "blocks/catalog-filter-price";
+@import "blocks/catalog-sorting";
+@import "blocks/card";
+@import "blocks/pagination";
+@import "blocks/map";
+@import "blocks/page-footer";
