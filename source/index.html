@@ -206,36 +206,36 @@
           <h3 class="catalog__heading">Каталог кофейных напитков</h3>
 
           <div class="catalog-wrapper">
-            <div class="catalog-filter"
-            <h2 class="visually-hidden">Фильтр для посика товаров</h2>
-            <form class="catalog-filter__form" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset class="catalog-filter__price">
-              <legend class="catalog-filter__title catalog-filter__title--price">Цена</legend>
-              <div class="catalog-filter__price-range">
-                <div class="catalog-filter__range-container">
-                  <div class="catalog-filter__range-scale">
-                    <div class="catalog-filter__range-bar"></div>
+            <div class="catalog-filter">
+              <h2 class="visually-hidden">Фильтр для посика товаров</h2>
+              <form class="catalog-filter__form" method="post" action="https://echo.htmlacademy.ru">
+                <fieldset class="catalog-filter__price">
+                  <legend class="catalog-filter__title catalog-filter__title--price">Цена</legend>
+                  <div class="catalog-filter__price-range">
+                    <div class="catalog-filter__range-container">
+                      <div class="catalog-filter__range-scale">
+                        <div class="catalog-filter__range-bar"></div>
+                      </div>
+
+                      <div class="catalog-filter__range-togglers">
+                        <div class="catalog-filter__range-toggler catalog-filter__range-toggler--min"></div>
+                        <div class="catalog-filter__range-toggler catalog-filter__range-toggler--max"></div>
+                      </div>
+                    </div>
                   </div>
 
-                  <div class="catalog-filter__range-togglers">
-                    <div class="catalog-filter__range-toggler catalog-filter__range-toggler--min"></div>
-                    <div class="catalog-filter__range-toggler catalog-filter__range-toggler--max"></div>
-                  </div>
+                  <div class="catalog-filter__price-controls">
+                    <label class="catalog-filter__price-label">
+                      <input class="catalog-filter__price-input catalog-filter__price-input--min" min="0" max="900" placeholder="0" type="number" name="price">
+                    </label>
+
+                  <label class="catalog-filter__price-label">
+                    <input class="catalog-filter__price-input catalog-filter__price-input--max" min="0" max="900" placeholder="900" type="number" name="price">
+                  </label>
                 </div>
-              </div>
+              </fieldset>
 
-              <div class="catalog-filter__price-controls">
-                <label class="catalog-filter__price-label">
-                  <input class="catalog-filter__price-input catalog-filter__price-input--min" min="0" max="900" placeholder="0" type="number" name="price">
-                </label>
-
-                <label class="catalog-filter__price-label">
-                  <input class="catalog-filter__price-input catalog-filter__price-input--max" min="0" max="900" placeholder="900" type="number" name="price">
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset class="catalog-filter__milk">
+              <fieldset class="catalog-filter__milk">
                 <legend class="catalog-filter__title catalog-filter__title--milk">Наличие молока</legend>
                 <ul class="catalog-filter__list catalog-filter__milk">
                   <li class="catalog-filter__item">
@@ -303,121 +303,122 @@
               </div>
             </form>
           </div>
+        </div>
 
-          <div class="catalog-sorting">
-            <form class="catalog-sorting-type" action="https://echo.htmlacademy.ru" method="post">
-              <label class="catalog-sorting__title" for="sorting">Сортировка</label>
-              <select class="catalog-sorting__select" name="sorting" id="sorting">
-                <option class="catalog-sorting__select-option" value="default" selected>По умолчанию</option>
-                <option class="catalog-sorting__select-option" value="cheap">Сначала дорогие</option>
-                <option class="catalog-sorting__select-option" value="expensive">Сначала дешевые</option>
-                <option class="catalog-sorting__select-option" value="popular">Высокий рейтинг</option>
-              </select>
-            </form>
+        <div class="catalog-sorting">
+          <form class="catalog-sorting-type" action="https://echo.htmlacademy.ru" method="post">
+            <label class="catalog-sorting__title" for="sorting">Сортировка</label>
+            <select class="catalog-sorting__select" name="sorting" id="sorting">
+              <option class="catalog-sorting__select-option" value="default" selected>По умолчанию</option>
+              <option class="catalog-sorting__select-option" value="cheap">Сначала дорогие</option>
+              <option class="catalog-sorting__select-option" value="expensive">Сначала дешевые</option>
+              <option class="catalog-sorting__select-option" value="popular">Высокий рейтинг</option>
+            </select>
+          </form>
 
-            <ul class="catalog__product-card-list">
-              <li class="product-card-item">
-                <a class="product-card-item-link" href="#">
-                  <picture class="product-card-item-picture">
-                    <source media="(min-width: 320px)" srcset="images/catalog/coffee-white-small.png" width="130" height="188" type="image/svg">
-                    <img class="product-card-item-image" src="images/catalog/coffee-white-small.png" alt="декаф флэт уайт" width="130" height="188">
-                  </picture>
-                </a>
-                <a class="product-card-title-link product-card-title" href="#">
-                  <p class="product-card-title">Декаф Флэт Уайт</p>
-                </a>
-                <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="product-card-price-wrapper">
+          <ul class="catalog__product-card-list">
+            <li class="product-card-item">
+              <a class="product-card-item-link" href="#">
+                <picture class="product-card-item-picture">
+                  <source media="(min-width: 320px)" srcset="images/catalog/coffee-white-small.png" width="130" height="188" type="image/svg">
+                  <img class="product-card-item-image" src="images/catalog/coffee-white-small.png" alt="декаф флэт уайт" width="130" height="188">
+                </picture>
+              </a>
+              <a class="product-card-title-link product-card-title" href="#">
+                <p class="product-card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <div class="product-card-price-wrapper">
+                <span class="product-card-price">225₽</span>
+                <a class="product-card-button" href="#">В корзину</a>
+              </div>
+            </li>
+
+            <li class="product-card-item">
+              <a class="product-card_-item-link" href="#">
+                <picture class="product-card-item-picture">
+                  <source media="(min-width: 320px)" srcset="images/catalog/coffee-purpure-small.png" width="130" height="188" type="image/svg">
+                  <img class="product-card-item-image" src="images/catalog/coffee-purpure-small.png" alt="декаф флэт уайт" width="130" height="188">
+                </picture>
+              </a>
+              <a class="product-card-title-link" href="#">
+                <p class="product-card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <div class="product-card-price-wrapper">
+                <span class="product-card-price">225₽</span>
+                <a class="product-card-button" href="#">В корзину</a>
+              </div>
+            </li>
+
+            <li class="product-card-item">
+              <a class="product-card-item-link" href="#">
+                <picture class="product-card-item-picture">
+                  <source media="(min-width: 320px)" srcset="images/catalog/coffee-black-small.png" width="130" height="188" type="image/svg">
+                  <img class="product-card-item-image" src="images/catalog/coffee-black-small.png" alt="декаф флэт уайт" width="130" height="188">
+                </picture>
+              </a>
+              <a class="product-card-title-link" href="#">
+                <p class="product-card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <div class="product-card-price-wrapper">
+                <span class="product-card-price">225₽</span>
+                <a class="product-card-button" href="#">В корзину</a>
+              </div>
+            </li>
+
+            <li class="product-card-item">
+              <a class="product-card-item-link" href="#">
+                <picture class="product-card-item-picture">
+                  <source media="(min-width: 320px)" srcset="images/catalog/coffee-pink-small.png" width="130" height="188" type="image/svg">
+                  <img class="product-card-item-image" src="images/catalog/coffee-pink-small.png" alt="декаф флэт уайт" width="130" height="188">
+                </picture>
+              </a>
+              <a class="product-card-title-link" href="#">
+                <p class="product-card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <div class="product-card-price-wrapper">
+                <span class="product-card-price">225₽</span>
+                <a class="product-card-button" href="#">В корзину</a>
+              </div>
+            </li>
+
+            <li class="product-card-item">
+              <a class="product-card-item-link" href="#">
+                <picture class="product-card-item-picture">
+                  <source media="(min-width: 320px)" srcset="images/catalog/coffee-brown-small.png" width="130" height="188" type="image/svg">
+                  <img class="product-card-item-image" src="images/catalog/coffee-brown-small.png" alt="декаф флэт уайт" width="130" height="188">
+                </picture>
+              </a>
+              <a class="product-card-title-link" href="#">
+                <p class="product-card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <div class="product-card-price-wrapper">
                   <span class="product-card-price">225₽</span>
                   <a class="product-card-button" href="#">В корзину</a>
-                </div>
-              </li>
+              </div>
+            </li>
 
-              <li class="product-card-item">
-                <a class="product-card_-item-link" href="#">
-                  <picture class="product-card-item-picture">
-                    <source media="(min-width: 320px)" srcset="images/catalog/coffee-purpure-small.png" width="130" height="188" type="image/svg">
-                    <img class="product-card-item-image" src="images/catalog/coffee-purpure-small.png" alt="декаф флэт уайт" width="130" height="188">
-                  </picture>
-                </a>
-                <a class="product-card-title-link" href="#">
-                  <p class="product-card-title">Декаф Флэт Уайт</p>
-                </a>
-                <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="product-card-price-wrapper">
-                  <span class="product-card-price">225₽</span>
-                  <a class="product-card-button" href="#">В корзину</a>
-                </div>
-              </li>
-
-              <li class="product-card-item">
-                <a class="product-card-item-link" href="#">
-                  <picture class="product-card-item-picture">
-                    <source media="(min-width: 320px)" srcset="images/catalog/coffee-black-small.png" width="130" height="188" type="image/svg">
-                    <img class="product-card-item-image" src="images/catalog/coffee-black-small.png" alt="декаф флэт уайт" width="130" height="188">
-                  </picture>
-                </a>
-                <a class="product-card-title-link" href="#">
-                  <p class="product-card-title">Декаф Флэт Уайт</p>
-                </a>
-                <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="product-card-price-wrapper">
-                  <span class="product-card-price">225₽</span>
-                  <a class="product-card-button" href="#">В корзину</a>
-                </div>
-              </li>
-
-              <li class="product-card-item">
-                <a class="product-card-item-link" href="#">
-                  <picture class="product-card-item-picture">
-                    <source media="(min-width: 320px)" srcset="images/catalog/coffee-pink-small.png" width="130" height="188" type="image/svg">
-                    <img class="product-card-item-image" src="images/catalog/coffee-pink-small.png" alt="декаф флэт уайт" width="130" height="188">
-                  </picture>
-                </a>
-                <a class="product-card-title-link" href="#">
-                  <p class="product-card-title">Декаф Флэт Уайт</p>
-                </a>
-                <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="product-card-price-wrapper">
-                  <span class="product-card-price">225₽</span>
-                  <a class="product-card-button" href="#">В корзину</a>
-                </div>
-              </li>
-
-              <li class="product-card-item">
-                <a class="product-card-item-link" href="#">
-                  <picture class="product-card-item-picture">
-                    <source media="(min-width: 320px)" srcset="images/catalog/coffee-brown-small.png" width="130" height="188" type="image/svg">
-                    <img class="product-card-item-image" src="images/catalog/coffee-brown-small.png" alt="декаф флэт уайт" width="130" height="188">
-                  </picture>
-                </a>
-                <a class="product-card-title-link" href="#">
-                  <p class="product-card-title">Декаф Флэт Уайт</p>
-                </a>
-                <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="product-card-price-wrapper">
-                    <span class="product-card-price">225₽</span>
-                    <a class="product-card-button" href="#">В корзину</a>
-                </div>
-              </li>
-
-              <li class="product-card-item">
-                <a class="product-card-item-link" href="#">
-                  <picture class="product-card-item-picture">
-                    <source media="(min-width: 320px)" srcset="images/catalog/coffee-yellow-small.png" width="130" height="188" type="image/svg">
-                    <img class="product-card-item-image" src="images/catalog/coffee-yellow-small.png" alt="декаф флэт уайт" width="130" height="188">
-                  </picture>
-                </a>
-                <a class="product-card-title-link" href="#">
-                  <p class="product-card-title">Декаф Флэт Уайт</p>
-                </a>
-                <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                <div class="product-card-price-wrapper">
-                  <span class="product-card-price">225₽</span>
-                  <a class="product-card-button" href="#">В корзину</a>
-                </div>
-              </li>
-            </ul>
+            <li class="product-card-item">
+              <a class="product-card-item-link" href="#">
+                <picture class="product-card-item-picture">
+                  <source media="(min-width: 320px)" srcset="images/catalog/coffee-yellow-small.png" width="130" height="188" type="image/svg">
+                  <img class="product-card-item-image" src="images/catalog/coffee-yellow-small.png" alt="декаф флэт уайт" width="130" height="188">
+                </picture>
+              </a>
+              <a class="product-card-title-link" href="#">
+                <p class="product-card-title">Декаф Флэт Уайт</p>
+              </a>
+              <p class="product-card-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+              <div class="product-card-price-wrapper">
+                <span class="product-card-price">225₽</span>
+                <a class="product-card-button" href="#">В корзину</a>
+              </div>
+            </li>
+          </ul>
 
             <ul class="catalog-pagination">
               <li class="catalog-pagination__item">
@@ -445,7 +446,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
         </section>
     </main>
 
